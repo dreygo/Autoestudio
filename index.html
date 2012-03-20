@@ -1,1 +1,273 @@
-Página de inicio
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Tutorial.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.Estilo1 {color: #0066FF}
+.Estilo2 {
+	color: #0000FF;
+	font-weight: bold;
+}
+.Estilo5 {font-family: "Franklin Gothic Demi"}
+.Estilo6 {
+	font-size: 36px;
+	color: #0000FF;
+}
+.Estilo7 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.Estilo9 {font-size: 24px}
+a:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0000FF;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	color: #FF0000;
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('../../Documents/Documents/e/Mis documentos/Mis im&aacute;genes/tophat2[1].gif')">
+<table width="993" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="99" colspan="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000000">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="998" height="82" valign="top" bgcolor="#000000" class="Estilo1"><h1 align="center"><img src="../../Documents/Documents/e/MIS TRABAJOS/proyecto_web(tutorial)/imagenes/Magoos1[1].gif" width="81" height="78">PR&Aacute;CTICA DE USO DE GITHUB.COM</h1></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="46" colspan="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="213" height="46" valign="top" bgcolor="#C2C2C2"><img src="../../Documents/Documents/e/MIS TRABAJOS/proyecto_web(tutorial)/imagenes/seleccione.JPG" width="189" height="42" align="absmiddle"><span class="Estilo6">:</span></td>
+        <td width="785" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+              <!--DWLayoutTable-->
+              <tr>
+                <td width="785" height="46" valign="top" bgcolor="#C2C2C2"><h1><span class="Estilo2">Crear un proyecto </span></h1></td>
+              </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="22" colspan="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="998" height="19" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td width="191" height="912" valign="top" bgcolor="#00BFFF"> <p>&nbsp;</p>
+      <ol start="1" type="1">
+        <li>Crear un proyecto</li>
+           <li>Descargar el proyecto en       un computador</li>
+           <li>Modificar archivos desde       el&nbsp;computador y subirlos a github</li>
+           <li>Descargar Archivos       modificados al computador</li>
+           <li>Hacer un fork a un       proyecto ya existente</li>
+           <li>Modificar el fork del       proyecto existente desde el comptuador y hacer un Pull Request para que       sea inclu&iacute;do en el fork</li>
+           <li>Aceptar un pull request</li>
+           <li>Actualizar un fork cuando       el proyecto upstream (el original)&nbsp;ha cambiado</li>
+           <li>Crear un branch</li>
+           <li>Subir modificaciones a un       branch&nbsp;del proyecto</li>
+           <li>Actualizar un branch       usando otro</li>
+           <li>Unir dos branches</li>
+      </ol></td>
+    <td width="5">&nbsp;</td>
+    <td width="4" valign="top" bgcolor="#CCCCCC"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td width="8">&nbsp;</td>
+    <td width="785" valign="top"><p align="justify"><br>
+    </p>
+      <p>Empezemos por conocer que es Git, este es un es  sistema de control de versiones distribuido, nace entonces <a href="https://github.com/" target="_blank">Github</a> un hosting para&nbsp;<a href="http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=git" target="_blank">git</a>, gratuito para  proyectos de caracter&iacute;stica opensource<br>
+        Primero debemos configurar el entorno local para  trabajar bajo github luego sabremos c&oacute;mo realizar la primera subida de un  proyecto al repositorio.<br>
+  <a name="02"></a><br>
+      </p>
+      <p>&nbsp;</p>
+      <p>Ahora instalaremos  el git y procedemos a configurarlo.<br>
+        Ahora descargaremos  una empaquetaci&oacute;n del git listo para instalar, desde, de la siguiente  ubicaci&oacute;n:&nbsp;<a href="http://git-scm.com/" target="_blank">http://git-scm.com/</a> <br>
+        Esta instalaci&oacute;n es  sencilla, tras la misma comprobaremos la versi&oacute;n instalada ejecutando por l&iacute;nea  de comandos:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><br>
+            1 </td>
+          <td width="721"><p>git &ndash;versi&oacute;n </p></td>
+        </tr>
+      </table>
+      <p>Seguidamente  configuraramos el usuario, e-mail y los decoradores de la salida por consola,  se siguen los siguientes pasos&nbsp;para la <a href="http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=git#4.%20Configuraci%C3%B3n%20de%20Git|outline" target="_blank">configuraci&oacute;n  de git</a>.<br>
+        Agregaremos a la  configuraci&oacute;n dada la creaci&oacute;n de un archivo de exclusiones. Es normal que por el  sistema operativo o por el sistema de gesti&oacute;n del ciclo de vida del proyecto,  se generen en el directorio de nuestra aplicaci&oacute;n archivos que no queremos que  formen parte del repositorio. Para esto se puede tener una configuraci&oacute;n  general por proyecto o una global para todos los proyectos.<br>
+        El resultado de  todas estas configuraciones deber&iacute;a ser un archivo&nbsp;<strong>.gitconfig</strong>&nbsp;en  nuestro directorio de usuario que contenga:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td valign="top"><p>1<br>
+            2<br>
+            3<br>
+            4<br>
+            5<br>
+            6<br>
+            7<br>
+            8</p></td>
+          <td width="721" valign="top"><p>[user] <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;name = Carlos Alberto    Pardo <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;email = carlospardo88@gmail.com <br>
+            [color] <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;status    = auto <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;branch    = auto <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;diff = auto <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;interactive    = auto </p></td>
+        </tr>
+      </table>
+      <p>GitHub usa una  clave tipo ssh para establecer una conexi&oacute;n segura entre el usuario y el  servidor de git. Debemos generar una calve y a&ntilde;adir la misma a nuestro perfil  GitHub.<br>
+        Para generar una  nueva clave, desde el terminal se deben ejecutar los siguientes comandos:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><br>
+            1 </td>
+          <td width="721"><p>ssh-keygen    -t rsa -C &quot;your_email@yourcompany.com&quot; </p></td>
+        </tr>
+      </table>
+      <p>Enseguida nos solicitar&aacute;  una ubicaci&oacute;n para la clave, por defecto nos ofrece la siguiente ruta:  /Users/your_user_directory/.ssh/id_rsa y una &quot;frase cualquiera&quot; como  contrase&ntilde;a.<br>
+        Al finalizar  deber&iacute;amos tener esto:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><br>
+            1<br>
+            2<br>
+            3<br>
+            4<br>
+            5<br>
+            6<br>
+            7<br>
+            8<br>
+            9<br>
+            10<br>
+            11<br>
+            12<br>
+            13<br>
+            14<br>
+            15<br>
+            16 </td>
+          <td width="713"><p>Your identification has been saved in /Users/your_user_directory/.ssh/id_rsa. <br>
+            Your public key has been saved in /Users/your_user_directory/.ssh/id_rsa.pub. <br>
+            The key fingerprint is: <br>
+            01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db    your_email@yourcompany.com <br>
+            The key's randomart image is: <br>
+            +--[    RSA 2048]----+ <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;    .+&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    = o O .&nbsp;&nbsp; | <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    = * *&nbsp;&nbsp;&nbsp; | <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    o = +&nbsp;&nbsp;&nbsp;&nbsp; | <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    o S .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;    o o =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    o . E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | <br>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | <br>
+            +-----------------+ </p></td>
+        </tr>
+      </table>
+      <p>Ahora &nbsp;del sitio de GitHub en &quot;Account  Settings&quot; &gt; &quot;SSH Public Keys&quot; &gt; &quot;Add another public  key&quot;, denemos a&ntilde;adir el contenido del archivo&nbsp;<strong>id_rsa.pub</strong>&nbsp;generado  en /Users/your_user_directory/.ssh/<br>
+        <img border="0" width="263" height="190" src="../../Documents/Documents/e/MIS TRABAJOS/proyecto_web(tutorial)/index_clip_image002.jpg" alt="Descripci&oacute;n: http://www.adictosaltrabajo.com/tutoriales/githubFirstStepsUploadProject/githubFirstStepsUploadProject1.png"> <br>
+        Para comprobar la  configuraci&oacute;n debemos ejecutar lo siguiente:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><br>
+            1 </td>
+          <td width="721"><p>ssh git@github.com </p></td>
+        </tr>
+      </table>
+      <p>La salida deber&iacute;a  ser :</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><br>
+            1<br>
+            2<br>
+            3 </td>
+          <td width="721"><p>The    authenticity of host 'github.com (207.97.227.239)' can't be established. <br>
+            RSA key    fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. <br>
+            Are you    sure you want to continue connecting (yes/no)? </p></td>
+        </tr>
+      </table>
+      <p>Damos yes y pulsando enter aparecera la siguiente  salida:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="768">
+        <tr>
+          <td><p>1<br>
+            2<br>
+            3</p></td>
+          <td width="738"><p>PTY allocation    request failed on channel 0 <br>
+            Hi    username! You've successfully authenticated, but GitHub does not provide    shell access. <br>
+            Connection    to github.com closed. </p></td>
+        </tr>
+      </table>
+      <p><a name="05"></a><br>
+        <br>
+        <strong>Subir el  proyecto</strong><br>
+        Una vez tenemos el  entorno configurado y montado ya podemos subir el proyecto para compartirlo.<br>
+        Al tratarse de un nuevo  proyecto lo primero es ubicarnos a nivel de la carpeta padre del proyecto (all&iacute;  donde se encuentra, por ejemplo, el directorio .metadata) y ejecutar:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><p>1</p></td>
+          <td width="721"><p>git init </p></td>
+        </tr>
+      </table>
+      <p>Con ello crearemos  el repositorio de git, que es el mismo directorio .git en la misma ubicaci&oacute;n  (si tuvieramos que volver a crearlo basta con borrarlo).<br>
+        A continuaci&oacute;n, agregamos  todos los fuentes al repositorio, con comando:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><br>
+            1 </td>
+          <td width="721"><p>git add * </p></td>
+        </tr>
+      </table>
+      <p>Para revisar lo  agregado al repositorio podemos ejecutar el comando:</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><br>
+            1 </td>
+          <td width="721"><p>git status </p></td>
+        </tr>
+      </table>
+      <p>Todo lo que se  liste ser&aacute; lo que se suba con el proyecto.<br>
+        Lo &uacute;ltimo es hacer  un commit, asignar al repositorio remoto y hacer un push</p>
+      <table border="0" cellspacing="0" cellpadding="0" width="751">
+        <tr>
+          <td><br>
+            1<br>
+            2<br>
+            3 </td>
+          <td width="721"><p>git commit -m 'Subo la estructura del proyecto al    repositorio de GitHub' <br>
+            git    remote add origin git@github.com:my_company/my_project.git <br>
+            git    push -u origin master </p></td>
+        </tr>
+      </table>
+      <p>Ahora en el sitio  del proyecto en GitHub se tendra el push</p>    </td>
+  </tr>
+  <tr>
+    <td height="45" colspan="5" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
